@@ -44,13 +44,13 @@ public:
 
         if (isDungeon(player->GetMap())) {
             groupAmount = config.dungeonLootGroupRate;
-            LOG_INFO("module", "mod_dynamic_loot_rates: In dungeon: Applying loot group rate of {}", groupAmount);
+            LOG_DEBUG("module", "mod_dynamic_loot_rates: In dungeon: Applying loot group rate of {}", groupAmount);
             return;
         }
 
         if (isRaid(player->GetMap())) {
             groupAmount = config.raidLootGroupRate;
-            LOG_INFO("module", "mod_dynamic_loot_rates: In raid: Applying loot group rate of {}", groupAmount);
+            LOG_DEBUG("module", "mod_dynamic_loot_rates: In raid: Applying loot group rate of {}", groupAmount);
             return;
         }
     }
@@ -63,13 +63,13 @@ public:
 
         if (isDungeon(player->GetMap())) {
             maxcount = config.dungeonLootGroupRate;
-            LOG_INFO("module", "mod_dynamic_loot_rates: In dungeon: Applying loot reference rate of {}", maxcount);
+            LOG_DEBUG("module", "mod_dynamic_loot_rates: In dungeon: Applying loot reference rate of {}", maxcount);
             return;
         }
 
         if (isRaid(player->GetMap())) {
             maxcount = config.raidLootGroupRate;
-            LOG_INFO("module", "mod_dynamic_loot_rates: In raid: Applying loot reference rate of {}", maxcount);
+            LOG_DEBUG("module", "mod_dynamic_loot_rates: In raid: Applying loot reference rate of {}", maxcount);
             return;
         }
     }
